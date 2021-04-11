@@ -8,8 +8,9 @@ public class AppBirdsTest {
         System.out.println(bird2.toString());
         System.out.println(bird3.toString());
 
-        bird1.birdFly();
-        bird2.birdEat();
+        bird1.eat();
+        bird2.fly();
+        bird3.swims();
 
     }
 }

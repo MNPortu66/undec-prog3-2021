@@ -1,4 +1,4 @@
-public class Bird {
+public class Bird implements IBird, IBirdFly,IBirdSwim{
     private String nombre;
 
     public Bird() {
@@ -8,16 +8,25 @@ public class Bird {
         this.nombre = nombre;
     }
 
-    public void birdFly(){
-        System.out.println("The " + this.nombre + " fly");
-
+    @Override
+    public String toString() {
+        return "nombre del ave='" + nombre + '\'';
     }
-    public void birdEat(){
+
+    @Override
+    public void eat() {
         System.out.println("The " + this.nombre + " eats");
     }
 
     @Override
-    public String toString() {
-        return "nombre del ave='" + nombre + '\'';
+    public void fly() {
+        System.out.println("The " + this.nombre + " fly");
+
+    }
+
+    @Override
+    public void swims() {
+        System.out.println("The " + this.nombre + " swims");
+
     }
 }
