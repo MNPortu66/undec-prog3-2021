@@ -1,10 +1,10 @@
-public class CreateBirdOracleDB {
-    //Aplicando el primer principio estraemos el guardado del ave de la clase Bird y los hacemos aquí
+public class CreateBirdOracleDB implements IConnectionDB{
+
     Bird birdToSave = new Bird();
 
-    public void createBirdOracleDB(Bird birdToSave){
+    @Override
+    public void createBird(Bird birdToSave) {
         System.out.println("Se guarda el ave en base de dato oracle");
-
     }
 
 }
