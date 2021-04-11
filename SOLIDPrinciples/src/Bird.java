@@ -1,32 +1,24 @@
-public class Bird implements IBird, IBirdFly,IBirdSwim{
-    private String nombre;
+public class Bird{
+    private String name;
 
     public Bird() {
     }
 
-    public Bird(String nombre) {
-        this.nombre = nombre;
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Bird(String name) {
+        this.name = name;
     }
 
     @Override
     public String toString() {
-        return "nombre del ave='" + nombre + '\'';
+        return "nombre del ave='" + name + '\'';
     }
 
-    @Override
-    public void eat() {
-        System.out.println("The " + this.nombre + " eats");
-    }
-
-    @Override
-    public void fly() {
-        System.out.println("The " + this.nombre + " fly");
-
-    }
-
-    @Override
-    public void swims() {
-        System.out.println("The " + this.nombre + " swims");
-
-    }
 }
