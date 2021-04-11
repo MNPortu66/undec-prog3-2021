@@ -1,13 +1,13 @@
 public class Bird {
     private String nombre;
 
+    public Bird() {
+    }
+
     public Bird(String nombre) {
         this.nombre = nombre;
     }
-    public void createBirdOracleDB(Bird bird){
-        System.out.println("Se guarda el ave en base de dato oracle");
 
-    }
     public void birdFly(){
         System.out.println("The " + this.nombre + " fly");
 
